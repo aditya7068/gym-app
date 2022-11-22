@@ -7,7 +7,7 @@ const HorizontalScrollbar = ({data,bodyPart,setBodyPart}) => {
  
   return (
     <ScrollMenu>
-        {data.map((item,index)=> (
+        {data.map((item)=> (
         <Box 
         key={item.id || item}
         itemId={item.id|| item}
@@ -16,7 +16,7 @@ const HorizontalScrollbar = ({data,bodyPart,setBodyPart}) => {
         >
         
        <BodyPart item={item} bodyPart={bodyPart} 
-       setBodyPart={setBodyPart} key={index}/>
+       setBodyPart={setBodyPart} />
      
         </Box>))}
         </ScrollMenu>
