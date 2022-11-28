@@ -49,8 +49,9 @@ body {
   }
   
   .detail-image {
-    width: 729px;
-    height: 742px;
+   
+    width: 429px;
+    height: 442px;
   }
   
   .hero-banner-img {
@@ -79,6 +80,8 @@ body {
   }
   
   .exercise-card img {
+   display: flex;
+   align-items: center;
     height: 226px;
   }
   

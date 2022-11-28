@@ -38,6 +38,7 @@ fetchCatExercise();
      
      {currExercise.map((exercise,index)=>(
          <ExerciseCard key={index} exercise={exercise}/>
+        
      ))}
      </Stack>
      <Stack mt="100px" alignItems="center">
