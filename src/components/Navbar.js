@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="header">
-      <div className="leftHand">
+    <div>
+      {/* <div className="leftHand">
         <div className="headerLogo">
-          <img src={logo2} />
+          <img src={logo2} alt="..load" />
         </div>
         <h3>
           FIT<span>club</span>
@@ -26,7 +26,75 @@ const Navbar = () => {
         <Link to="/blog" className="menu">
           Blog
         </Link>
-      </div>
+      </div> */}
+
+      <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+        <div className="container-fluid">
+          <div className="leftHand">
+            <div className="headerLogo">
+              <img src={logo2} alt="..load" />
+            </div>
+            <h3>
+              FIT<span>club</span>
+            </h3>
+          </div>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li>
+                <Link to="/" className="menu">
+                  home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className="menu">
+                  about
+                </Link>
+              </li>
+              <li>
+                <Link to="/exercise/0001" className="menu">
+                  exercise
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="menu">
+                  Blog
+                </Link>
+              </li>
+              {/* <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  About
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Exersice
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Blog
+                </a>
+              </li> */}
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
   );
 };

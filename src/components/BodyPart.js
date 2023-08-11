@@ -26,7 +26,7 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
         window.scrollTo({ top: 1800, left: 100, behaviour: "smooth" });
       }}
     >
-      <img src={Icon} style={{ width: "100%", height: "60%" }} />
+      <img src={Icon} style={{ width: "100%", height: "60%" }} alt="..load" />
       <Typography
         fontSize="24px"
         fontWeight="bold"

@@ -53,9 +53,8 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
     >
       <div className="newsletter">
         <div className="newsHead">
-          <h1>
-            Awesome baby exercises you <br /> <span>should know </span>
-          </h1>
+          <h1>Awesome baby exercises you</h1>
+          <h1 style={{ color: "#ff2625" }}> should know </h1>
         </div>
 
         <div className="searchbar">

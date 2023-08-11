@@ -142,7 +142,15 @@ body {
   padding: 0px 5px;
   margin: 0px 7px;
 }
-.header .rightHand :hover {
+.navbar-light .navbar-toggler {
+  color: white;
+  border-color: white;
+  background-color: white;
+}
+.show {
+  text-align: right;
+}
+.navbar-nav a:hover {
   cursor: pointer;
   color: #ff2625;
   border-bottom: 3px solid white !important;
@@ -157,6 +165,7 @@ body {
   border-radius: 50%;
   background-color: white;
 }
+
 .banner {
   height: 100vh;
 }
@@ -205,13 +214,11 @@ body {
 .newsHead h1 {
   font-size: 40px;
   font-weight: bold;
-  padding-bottom: 20px;
+  text-align: center;
   text-transform: capitalize;
+  padding: 0px 20px;
 }
-.newsHead h1 span {
-  color: #ff2625;
-  margin-left: 172px;
-}
+
 .newsDiscription {
   font-size: 24px;
   padding-bottom: 20px;
@@ -220,6 +227,7 @@ body {
 .searchbar {
   width: 50%;
   height: 40px;
+  margin-top: 20px;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -242,6 +250,96 @@ body {
   display: flex;
   overflow: scroll;
 }
+
+.about {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.about .image {
+  flex: 1;
+  position: relative;
+}
+
+.about .image::before,
+.about .image::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #ff2625;
+  height: 15rem;
+  width: 15rem;
+}
+
+.about .image::before {
+  top: 0;
+  left: 0;
+}
+
+.about .image::after {
+  bottom: 0;
+  right: 0;
+}
+
+.about .image img {
+  width: 100%;
+  padding: 2rem;
+}
+
+.about .content {
+  flex: 1;
+  margin: 0px;
+}
+
+.about .content span {
+  font-size: 2rem;
+  color: #ff2625;
+  text-transform: capitalize;
+}
+
+.about .content .title {
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 0.5rem;
+  padding: 5px;
+}
+
+.about .content p {
+  font-size: 17px;
+  color: #aaa;
+  padding: 5px;
+  line-height: 28px;
+}
+
+.about .content .box-container {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.about .content .box-container .box {
+  flex: 1;
+}
+
+.about .content .box-container .box h3 {
+  font-size: 20px;
+  color: #fff;
+  width: 200px;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+.about .content .box-container .box h3 i {
+  padding-right: 13px;
+  color: #ff2625;
+}
+
 /*----------------*/
 @media screen and (max-width: 1200px) {
   .detail-image {
@@ -269,6 +367,11 @@ body {
   .exercise-video {
     width: 320px;
     height: 300px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .searchbar {
+    width: 70%;
   }
 }
 
