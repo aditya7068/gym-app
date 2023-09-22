@@ -66,11 +66,11 @@ const Navbar = () => {
                   exercise
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/blog" className="menu">
                   Blog
                 </Link>
-              </li>
+              </li> */}
               {/* <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
                   Home
